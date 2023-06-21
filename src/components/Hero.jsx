@@ -31,7 +31,7 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="items-center rounded-md border-blacklight border-2 flex flex-col   md:flex-row md:justify-evenly">
+        <div className="items-center rounded-lg border-blacklight border-2 flex flex-col mx-auto container md:flex-row  md:justify-between">
           <div className="   ">
             <h1 className="px-5 text-blacklight text-2xl font-medium ">
               The Most Trusted <br /> Crypto Platform
