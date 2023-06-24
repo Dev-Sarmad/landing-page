@@ -16,11 +16,11 @@ function Products() {
           <h2 className="text-2xl mt-3 capitalize font-medium text-white">
             the easiest and the most <br /> powerfull crypto wallet
           </h2>
-          <p className="text-detaillight mt-3 ">
+          <p className="text-detaillight mt-5 ">
             Buy Bitcoin instantly with a credit card. debit card. <br /> or by
             linking your bank.
           </p>
-          <button className=" hover:bg-violet-400 hover:text-blacklight hover:duration-500 text-white rounded border-2 mt-3 px-3 ">Start here </button>
+          <button className=" hover:bg-violet-400 hover:text-blacklight hover:duration-500 text-white rounded border-2 mt-5 px-3 ">Start here </button>
         </div>
         <div className="flex flex-col space-x-0 space-y-3 justify-evenly">
           <div className=" border-blacklight border-2 flex space-x-3 justify-evenly p-10 items-center rounded-2xl text-center">

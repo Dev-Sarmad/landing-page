@@ -2,6 +2,7 @@ import React from "react";
 import transaction from "../assets/transaction.png";
 import trade from "../assets/trade.png";
 import app from "../assets/mobileapp.png";
+import appfeature from "../assets/mobileappfeature.png";
 import google from "../assets/google.png";
 import apple from "../assets/Apple-icon.png";
 import bitcoin from "../assets/bitcoin.svg";
@@ -9,7 +10,7 @@ import ethereum from "../assets/ethereum.svg";
 function Features() {
   return (
     <>
-      <div className="container mx-auto mt-28 flex flex-col spaxex-x-0 space-y-4">
+      <div className="container mx-auto mt-28 flex flex-col spaxex-x-0 space-y-4 relative">
         <div className=" flex flex-col md:flex-row   ">
           <div>
             <h1 className="text-blacklight text-4xl md:text-5xl font-bold text-left">
@@ -59,6 +60,57 @@ function Features() {
                 <h3>$17458345 &nbsp; +0.234% </h3>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="rounded-lg flex flex-col md:flex-row px-7 pt-3 justify-center md:justify-between bg-white">
+          <div>
+            <h1 className="text-blacklight text-4xl font-bold  ">
+              Borrowing, Trading And <br /> Custodial Operations To <br />{" "}
+              Individual Needs
+            </h1>
+            <p className="mt-5 text-start text-detaillight font-light">
+              Blockchain.com Institutional Markets is a fullfeatured
+              cryptocurrency <br /> services platform designed to connect with
+              companies with their own <br /> crypto assets and institutional
+              clients to lend. trade. and custodial <br /> bractivities tailored
+              to your needs.
+            </p>
+            <button className="mt-5 bg-blacklight text-white font-semibold p-2 ">
+              Become a customer
+            </button>
+          </div>
+
+          <img src={appfeature} alt="" className="mt-3" />
+        </div>
+        <div className=" flex flex-col text-left space-x-o space-y-3 md:flex-row md:justify-around md:space-x-3 md:space-y-0">
+          
+          <div className="flex flex-col space-x-0 space-y-3 justify-evenly">
+          <div className=" border-blacklight border-2 bg-lightYellow py-3 px-2  rounded-2xl text-center">
+              <h2 className="text-5xl font-bold">100%</h2>
+              <span className="font-semibold text-xl ">
+                Original materials
+              </span>
+            </div>
+            <div className=" border-blacklight border-2 flex space-x-3 justify-evenly  items-center rounded-2xl text-center">
+              <h2 className="text-5xl font-bold text-blacklight ">45% </h2>
+              <span className="text-3xl font-semibold">
+                Discounts for <br /> our Clients{" "}
+              </span>
+            </div>
+            
+          </div>
+          <div className="rounded-lg bg-backgroundcolor md:w-1/2 px-3  border-2 border-blacklight">
+            <h2 className="text-2xl mt-3 capitalize font-medium text-blacklight">
+              Blockchain data is in our DNA
+            </h2>
+            <p className="text-detaillight mt-5 ">
+              Confirm transactions, analyse the market, or simply more about
+              cryptocurrencies. From hash rote and block information to minin
+              information and more.
+            </p>
+            <button className="   text-blacklight rounded border-2 mt-5 px-3 ">
+              Explore Library
+            </button>
           </div>
         </div>
       </div>

@@ -13,7 +13,9 @@ export default {
         blacklight : "hsl(240, 12%, 13%)",
         detaillight: "hsl(250, 3%, 61%)",
         buttondiv : "hsl(240, 17%, 12%)",
-        iconcolor: "hsl(325, 84%, 88%)"
+        iconcolor: "hsl(325, 84%, 88%)",
+        backgroundcolor: "hsl(250, 60%, 98%)",
+        lightYellow:"hsl(50, 100%, 78%)"
       }
     },
   },
