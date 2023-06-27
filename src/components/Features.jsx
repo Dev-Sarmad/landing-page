@@ -9,12 +9,18 @@ import apple from "../assets/Apple-icon.png";
 import money from "../assets/money.png";
 import bitcoin from "../assets/bitcoin.svg";
 import ethereum from "../assets/ethereum.svg";
+import { motion } from "framer-motion";
+
 function Features() {
   return (
     <>
       <div className="container mx-auto mt-24 flex flex-col spaxex-x-0 space-y-4 relative">
         <div className=" flex flex-col md:flex-row   ">
-          <div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, scale: 1, x: 25 }}
+            transition={{ duration: 1 }}
+          >
             <h1 className="text-blacklight text-4xl md:text-5xl font-bold text-left">
               Best way to buy
               <img src={transaction} className="w-8 inline" alt="" /> <br />
@@ -22,8 +28,9 @@ function Features() {
             <h1 className="text-blacklight text-4xl md:text-5xl font-bold ml-32 mt-5 px-3">
               trade <img src={trade} alt="" className="inline" /> crypto
             </h1>
-          </div>
+          </motion.div>
         </div>
+
         <div className="flex flex-col space-y-3 space-x-0  md:flex-row md:space-x-3 md:space-y-0 items-center justify-around">
           <div>
             <img src={app} alt="" className="" />
@@ -113,25 +120,25 @@ function Features() {
         </div>
         <div className="rounded-full  p-10 bg-white ">
           <div className="mt-10 ">
-          <h1 className="text-4xl text-blacklight font-bold  ">
-            From Zero  <img src={money} alt="" className="inline" /> to
-          </h1>
-          <h1 className="text-4xl text-blacklight font-bold  ml-10 mt-3">
-            Cryptyo <img src={bit} alt="" className="inline" /> &nbsp;
-            in minutes
-          </h1>
+            <h1 className="text-4xl text-blacklight font-bold  ">
+              From Zero <img src={money} alt="" className="inline" /> to
+            </h1>
+            <h1 className="text-4xl text-blacklight font-bold  ml-10 mt-3">
+              Cryptyo <img src={bit} alt="" className="inline" /> &nbsp; in
+              minutes
+            </h1>
           </div>
           <div className="flex  flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0 justify-evenly">
             <div>
-            <p className="text-left text-detaillight">
-              Bl@ckchain.com Institutional Markets is a full-featured
-              cryptoocurrency <br /> services platform designed to connect.
-            </p>
+              <p className="text-left text-detaillight">
+                Bl@ckchain.com Institutional Markets is a full-featured
+                cryptoocurrency <br /> services platform designed to connect.
+              </p>
             </div>
             <div>
-            <button className="text-center inline-block bg-blacklight text-white rounded-lg px-3 py-2 ">
-              Get Started
-            </button>
+              <button className="text-center inline-block bg-blacklight text-white rounded-lg px-3 py-2 ">
+                Get Started
+              </button>
             </div>
           </div>
         </div>
