@@ -1,4 +1,3 @@
-import React from "react";
 import transaction from "../assets/transaction.png";
 import trade from "../assets/trade.png";
 import app from "../assets/mobileapp.png";
@@ -12,14 +11,16 @@ import ethereum from "../assets/ethereum.svg";
 import { motion } from "framer-motion";
 
 function Features() {
+  
+  
   return (
     <>
       <div className="container mx-auto mt-24 flex flex-col spaxex-x-0 space-y-4 relative">
-        <div className=" flex flex-col md:flex-row   ">
+        <div  className=" flex flex-col md:flex-row   ">
           <motion.div
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, scale: 1, x: 25 }}
-            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, scale:1 , x: 30 }}
+            transition={{ duration: 1.5 }}
           >
             <h1 className="text-blacklight text-4xl md:text-5xl font-bold text-left">
               Best way to buy
@@ -32,10 +33,10 @@ function Features() {
         </div>
 
         <div className="flex flex-col space-y-3 space-x-0  md:flex-row md:space-x-3 md:space-y-0 items-center justify-around">
-          <div>
+          <motion.div whileInView={{opacity:1 , x:30}} transition={{duration:1.5}} >
             <img src={app} alt="" className="" />
-          </div>
-          <div className="flex flex-col space-y-3 space-x-0">
+          </motion.div>
+          <motion.div initial={{opacity:0}} whileInView={{opacity:1 , x:30 }} transition={{duration:1.5}} className="flex flex-col space-y-3 space-x-0">
             <div className="text-left text-detaillight">
               <p>
                 The world fastest crypto matching engine built by traders of
@@ -69,7 +70,7 @@ function Features() {
                 <h3>$17458345 &nbsp; +0.234% </h3>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="rounded-lg flex flex-col md:flex-row px-7 pt-3 justify-center md:justify-between bg-white">
           <div>
@@ -119,7 +120,7 @@ function Features() {
           </div>
         </div>
         <div className="rounded-full  p-10 bg-white ">
-          <div className="mt-10 ">
+          <motion.div whileInView={{x:30}} transition={{duration:1}} className="mt-10 ">
             <h1 className="text-4xl text-blacklight font-bold  ">
               From Zero <img src={money} alt="" className="inline" /> to
             </h1>
@@ -127,19 +128,19 @@ function Features() {
               Cryptyo <img src={bit} alt="" className="inline" /> &nbsp; in
               minutes
             </h1>
-          </div>
+          </motion.div>
           <div className="flex  flex-col space-y-3 space-x-0 md:flex-row md:space-x-3 md:space-y-0 justify-evenly">
-            <div>
+            <motion.div whileInView={{x:-30}} transition={{duration:1}}>
               <p className="text-left text-detaillight">
                 Bl@ckchain.com Institutional Markets is a full-featured
                 cryptoocurrency <br /> services platform designed to connect.
               </p>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div whileHover={{x:20}}>
               <button className="text-center inline-block bg-blacklight text-white rounded-lg px-3 py-2 ">
                 Get Started
               </button>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

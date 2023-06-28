@@ -1,13 +1,15 @@
 import React from "react";
 import transaction from "../assets/transaction.png";
 import heroimage from "../assets/hero_image.png";
-
+import {motion} from "framer-motion"
 function Hero() {
   return (
     <>
       <div className="container mx-auto max-w-6xl mt-10 flex flex-col space-x-0 space-y-5">
         <div className=" flex flex-col md:flex-row px-3 md:items-center  justify-evenly">
-          <div>
+          <motion.div initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, scale:1 , x: 30 }}
+            transition={{ duration: 1.5 }}>
             <h1 className="text-blacklight text-4xl md:text-5xl font-bold">
               The Best Lightning <br /> cryptyo
               <img
@@ -16,9 +18,11 @@ function Hero() {
                 alt=""
               /> trading{" "}
             </h1>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, scale:1 , x: 30 }}
+            transition={{ duration: 1.5 }}>
             <p className="text-detaillight mt-3">
               Trusted by millions since 2010 with <br /> over $1 Trillion in
               crypto transactions.
@@ -29,7 +33,7 @@ function Hero() {
               </button>
               <button className="text-blacklight text-xl">Explore</button>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="items-center rounded-lg border-blacklight border-2 flex flex-col mx-auto container md:flex-row  md:justify-between">
           <div className="   ">
